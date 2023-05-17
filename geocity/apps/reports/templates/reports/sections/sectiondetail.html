@@ -10,7 +10,7 @@
             {% if section.style == 0 %}
                 {% for form, fields in request_data.properties.submission_fields.items %}
                     {% if section.show_form_name %}
-                        <div class="flex_item-100"><h3>{{form}}</h3></div>
+                        <div class="flex_item-100"><h3>{{ form }}</h3></div>
                     {% endif %}
                     {% for key, field in fields.items %}
                         {% if not key in section.undesired_properties %}
